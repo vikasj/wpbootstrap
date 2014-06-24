@@ -2,8 +2,8 @@ This is a Bootstrap Base Theme for WordPress.
 
 Using:
 
-	- Sass Boostrap 3.0.21 http://alademann.github.io/sass-bootstrap/
+	-> <a href="http://alademann.github.io/sass-bootstrap/">Sass Boostrap 3.0.21</a>
 
-	- CSS Authoring Framework Compass http://compass-style.org/
+	-> <a href="http://compass-style.org/">CSS Authoring Framework Compass</a>
 
-	- wp_bootstrap_navwalker https://github.com/twittem/wp-bootstrap-navwalker
+	-> <a href="https://github.com/twittem/wp-bootstrap-navwalker">wp_bootstrap_navwalker</a>
