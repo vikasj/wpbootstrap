@@ -1,0 +1,23 @@
+/*
+Theme Name: WP Bootstrap
+Description: Bootstrap base theme using sass and compass.
+Author: Vikas Joshi
+Version: 1.0
+Tags: responsive, white, bootstrap
+*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/helpers";
+
+// base
+@import "base/base";
+
+// layout
+@import "layout/layout";
+
+// components
+@import "components/components";
+
+// vendors
+@import "vendors/vendors";
