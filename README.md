@@ -1,4 +1,5 @@
-This is a Bootstrap Base Theme for WordPress.
+Bootstrap Base Theme for WordPress
+============================================================================================================================
 
 Using:
 
