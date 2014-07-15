@@ -65,6 +65,7 @@
 			    $(".customize").click(function(){
 			    	$('#custom-fields-div').dialog('open');
 			    	$('.ui-widget-overlay').css('z-index',100);
+			    	$('.ui-widget-overlay').css("background-color", "#a9a9a9");
 			    });
 			    
 			});

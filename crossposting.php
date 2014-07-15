@@ -11,8 +11,6 @@
 			<div id="Rogers_Cross_Posting_MetaBox" class="postbox ">
 				<div class="inside">
 					<input id="rogers_cross_posting_metabox_nonce" name="rogers_cross_posting_metabox_nonce" value="654eb59965" type="hidden"><input name="_wp_http_referer" value="/wp-admin/post.php?post=837385&amp;action=edit" type="hidden">			
-
-						
 					<ul class="new-cross-post">
 						<li><input type="checkbox" id="rogers_cross_posting_checkall"> All</li>									
 						<li>
@@ -200,12 +198,12 @@
 				<div id="custom-fields-div">
 					<div class="custom-one-column">
 						<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-						<span>Title</span>
-						<input type="text" class="rogers_xposting_custom_field rogers_xposting_custom_text " style="width:50%;">
+						<span>Title: </span>
+						<input type="text" class="rogers_xposting_custom_field rogers_xposting_custom_text" style="width:50%;">
 					</div>
 					<div class="custom-one-column">
 						<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-						<span>Excerpt</span>
+						<span>Excerpt: </span>
 						<div>
 							<textarea class="rogers_xposting_custom_textarea rogers_xposting_custom_field">
 							</textarea>
@@ -213,7 +211,7 @@
 					</div>
 					<div class="custom-one-column">
 						<input type="checkbox" class="rogers_xposting_custom_checkbox" id="custom-category-checkbox"/>
-						<span>Category (?)</span>
+						<span>Category (?): </span>
 						<select id="custom-category-dropdown" class="rogers_xposting_custom_field">
 							<option value="0">Select</option>						
 							<option value="1">Weather</option>
@@ -224,7 +222,7 @@
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Topics</span>
+							<span>Topics: </span>
 								<p>
 								<input type="text" value="" autocomplete="off" name="newtag[rogers_topic]" id="new-tag-rogers_topic">
 								<input type="button" value="Add" class="button tagadd">
@@ -234,7 +232,7 @@
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Tags</span>
+							<span>Tags: </span>
 								<p>
 								<input type="text" value="" autocomplete="off" name="newtag[rogers_topic]" id="new-tag-rogers_topic">
 								<input type="button" value="Add" class="button tagadd">
@@ -244,55 +242,89 @@
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Feature Image </span>
+							<span>Featured Image:</span> 
+							<p class="hide-if-no-js">
+								<a title="Set featured image" href="." id="set-featured-image" class="thickbox">Set featured image</a>
+							</p>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Additional Post Images </span>
+							<span>Additional Post Images: </span>
+							<p class="hide-if-no-js">
+								<a title="Add post images" href="." id="set-featured-image" class="thickbox">Add post images</a>
+							</p>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Author </span>
+							<span>Author: </span>
+							<p>
+								<input type="text" id="post_author" name="post_author" autocomplete="off">
+								<input type="button" value="Add" class="button tagadd">
+							</p>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Post Format </span>
+							<span>Post Format: </span>
+							<select id="post-format-dropdown" class="rogers_xposting_custom_field">
+							<option value="0">Standard</option>						
+							<option value="1">Gallery</option>
+							<option value="2">Image</option>
+							<option value="3">Video</option>
+							<option value="3">Audio</option>								
+							</select>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>SEO Data</span>
+							<span>SEO Data: </span>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Related Links</span>
+							<span>Related Links: </span>
+							<ul>
+								<li>
+									<label for="related_links_url">URL:</label>
+									<input type="url" id="related_links_dialog_link_url">
+								</li>
+								<li>
+									<label for="related_links_text">Text:</label>
+									<input type="text" id="related_links_text" placeholder="Leave blank to display URL">
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Publish time</span>
+							<span>Publish time: </span>
+							<p>
+								<input id="post_publish_datetime" placeholder="Example: Jul 16, 2014 08:15:26 PM" name="post_publish_datetime" type="text" style="width: 50%" value="">
+							</p>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Expiration time</span>
+							<span>Expiration time: </span>
+							<p>
+								<input id="post_expiry_datetime" placeholder="Example: Jul 16, 2014 08:15:26 PM" name="post_expiry_datetime" type="text" style="width: 50%" value="">
+							</p>
 						</div>
 					</div>
 					<div class="custom-one-column">
 						<div id="rogers_topic" class="tagsdiv">
 							<input type="checkbox" class="rogers_xposting_custom_checkbox"/>
-							<span>Lead-in Text</span>
+							<span>Lead-in Text: </span>
+							<input type="text" id="rogers_leadin_text" name="rogers_leadin_text" style="width:50%;" value="" placeholder="" class="">
 						</div>
 					</div>
 					<input type="submit" accesskey="p" value="Save" class="button button-primary button-large" id="publish" name="publish">
