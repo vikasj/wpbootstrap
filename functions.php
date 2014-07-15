@@ -24,4 +24,28 @@ register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'wpbootstrap' ),
 ) );
 
+add_action('add_meta_boxes','crosspost_init');
+function crosspost_init()
+{
+   
+    foreach (array('article','post','page') as $type) 
+    {
+        add_meta_box('crossposting', 'Cross-Posting', 'crosspost_setup', $type, 'normal', 'high');
+    }
+}
+ 
+function crosspost_setup()
+{
+    global $post;
+  
+    // using an underscore, prevents the meta variable
+    // from showing up in the custom fields section
+    $meta = get_post_meta($post->ID,'_my_meta',TRUE);
+  
+    // instead of writing HTML here, lets do an include
+    include('crossposting.php');
+}
+
+
+
 ?>
