@@ -38,14 +38,9 @@ function crosspost_setup()
 {
     global $post;
   
-    // using an underscore, prevents the meta variable
-    // from showing up in the custom fields section
     $meta = get_post_meta($post->ID,'_my_meta',TRUE);
-  
-    // instead of writing HTML here, lets do an include
+
     include('crossposting.php');
 }
-
-
 
 ?>
