@@ -1,6 +1,14 @@
 <?php 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
+add_theme_support( 'post-thumbnails' );
+/*
+* Enable support for Post Formats.
+* See http://codex.wordpress.org/Post_Formats
+*/
+add_theme_support( 'post-formats', array(
+		'image', 'video', 'audio', 'link', 'gallery',
+) );
 
 function wpbootstrap_scripts_with_jquery()
 {
@@ -23,24 +31,5 @@ if ( function_exists('register_sidebar') )
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'wpbootstrap' ),
 ) );
-
-add_action('add_meta_boxes','crosspost_init');
-function crosspost_init()
-{
-   
-    foreach (array('article','post','page') as $type) 
-    {
-        add_meta_box('crossposting', 'Cross-Posting', 'crosspost_setup', $type, 'normal', 'high');
-    }
-}
- 
-function crosspost_setup()
-{
-    global $post;
-  
-    $meta = get_post_meta($post->ID,'_my_meta',TRUE);
-
-    include('crossposting.php');
-}
 
 ?>
