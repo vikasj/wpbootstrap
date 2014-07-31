@@ -37,8 +37,7 @@ This section explains the organizational structure of this repository:
 
 ## Installing Compass and Sass ##
 
-CSS Authoring Framework Compass: http://compass-style.org/
-Sass: http://sass-lang.com/
+CSS Authoring Framework Compass: http://compass-style.org/	Sass: http://sass-lang.com/
 
 Compass is a tool that runs on the command line on any system with ruby installed. 
 
