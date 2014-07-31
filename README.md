@@ -17,20 +17,15 @@ This section explains the organizational structure of this repository:
 
 	* **base/** contains boilerplate files
 		* **_base.scss** imports all scss files in base folder to this file 
-
 	* **components/** contains smaller components and specfic modules like slider, loader or widget
 		* **_components.scss** imports all scss files in componenets folder to this file
-
 	* **helpers/** contains all the sass tools, helpers, functions, and mixins
 		* **_helpers.scss** imports all scss files in helpers folder to this file
 	* **layout/** contains the main sections of the layout (header, footer, etc)
 		* **_layout.scss** imports all scss files in layout folder to this file
-
 	* **themes/** contains all theme and design styles
-
 	* **vendors/** contains all the CSS files from external libraries and frameworks
 		* **_vendors.scss** imports all scss files in vendors folder to this file
-
 	* **style.css.scss** imports _base.scss, _components.scss, _helpers.scss, _layout.scss, and _vendors.scss to this file
 
 * **style.css** compiled scss file that contains all the declared styles imported into **style.css.scss** file in the **sass** folder 
