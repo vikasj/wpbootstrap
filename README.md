@@ -27,8 +27,7 @@ This section explains the organizational structure of this repository:
 		* **_vendors.scss** imports all scss files in vendors folder to this file
 	* **style.css.scss** imports _base.scss, _components.scss, _helpers.scss, _layout.scss, and _vendors.scss to this file
 
-* **style.css** compiled scss file that contains all the declared styles imported into **style.css.scss** file in the **sass** folder
-	* Compile the themes sass files into css: **compass compile [path/to/project]**
+* **style.css** compiled scss file that contains all the declared styles imported into **style.css.scss** file in the **sass** folder * Compile the themes sass files into css: **compass compile [path/to/project]**
 
 * **config.rb** compass configuration file: http://compass-style.org/help/tutorials/configuration-reference/
 
