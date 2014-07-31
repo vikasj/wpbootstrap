@@ -41,9 +41,9 @@ CSS Authoring Framework Compass: http://compass-style.org/	Sass: http://sass-lan
 
 Compass is a tool that runs on the command line on any system with ruby installed. 
 
-Setting up Compass and Sass:
+* Setting up Compass and Sass:
 **gem install compass**
 
-This will install Compass and Sass too. If you want to verify that compass is installed:
+* This will install Compass and Sass too. If you want to verify that compass is installed:
 **compass version**
 
