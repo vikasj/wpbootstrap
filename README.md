@@ -13,7 +13,7 @@ This section explains the organizational structure of this repository:
 
 * **javascripts/** contains javascript files for sass-boostrap theme
 
-* **Sass/** contains all the scss files that are 
+* **Sass/** contains scss files for the theme
 
 	* **base/** contains boilerplate files
 		* **_base.scss** imports all scss files in base folder to this file 
